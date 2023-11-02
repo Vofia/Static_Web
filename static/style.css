@@ -1,0 +1,185 @@
+
+* {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+
+div {
+    display: flex;
+}
+
+#page {
+    font-family: serif;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; 
+    padding: 20px;
+}
+#name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#about {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#contacts {
+  font-weight: 750;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+#contact_box {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    padding-top: 0px;
+    padding-left: 0px;
+    flex-direction: row;
+}
+
+.contact_button {
+    background-color: transparent; 
+    padding-top: 0px;
+    padding-right: 60px;
+    border: 0px;
+}
+
+.contact_button img {
+    filter: invert(40%) sepia(0%) saturate(24%) hue-rotate(249deg) brightness(89%) contrast(100%); 
+    transition: 1s; 
+}
+
+.contact_button:hover{
+    background-color: darken;
+}
+
+.contact_button:hover img{
+    filter: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+body {
+    background-color:  #b4b9df;
+    margin-top: 200px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body .frame {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .lines {
+    background: linear-gradient(to bottom, #302948 2px, transparent 2px) 0 0, linear-gradient(to right, #34495e 2px, transparent 2px) 0 100%, linear-gradient(to left, #34495e 2px, transparent 2px) 100% 0, linear-gradient(to top, #34495e 2px, transparent 2px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-size 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  body .angles {
+    background: linear-gradient(to right, #a6afc0 2px, transparent 2px) 0 0, linear-gradient(to bottom, #a6afc0 2px, transparent 2px) 0 0, linear-gradient(to left, #a6afc0 2px, transparent 2px) 100% 0, linear-gradient(to bottom, #a6afc0 2px, transparent 2px) 100% 0, linear-gradient(to left, #a6afc0 2px, transparent 2px) 100% 100%, linear-gradient(to top, #a6afc0 2px, transparent 2px) 100% 100%, linear-gradient(to right, #a6afc0 2px, transparent 2px) 0 100%, linear-gradient(to top, #a6afc0 2px, transparent 2px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 7px 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.48;
+    transition: background-size 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  body:hover .lines {
+    background-size: 100% 100%;
+   
+  }
+  body:hover .angles {
+    background-size: 14px 14px;
+  }
+  body article {
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    cursor: fixed;
+  }
+  body article:before {
+    content: '';
+    background-color: #EBDEF0;
+    opacity: 0.46;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    bottom: 13px;
+    left: 13px;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  body article:hover:before {
+    top: 21px;
+    right: 21px;
+    bottom: 21px;
+    left: 21px;
+  }
+  body p {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #EBDEF0;
+    position: relative;
+  }
+
+
+  .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+  }
+  
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  }
+
+
+ 
