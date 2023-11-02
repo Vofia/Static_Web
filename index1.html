@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <link rel = "icon" href="/StaticWeb/static/images/vs.jpg">
+    <link rel="stylesheet" href="/StaticWeb/static/style.css">
+    <script type="module" src="/StaticWeb/static/script.js"></script>
+    <div class="bg"></div>
+    <div class="frame">
+    <div class="angles"></div>
+    <title>Фон</title>
+  <style>
+   body {
+    background: url(images/city.png) repeat-x 0 100% fixed,
+                linear-gradient(to top, #5080b1, #004e8c) fixed;
+    animation: city 30s linear infinite;
+    -webkit-animation: city 30s linear infinite;
+   }
+   @keyframes city {
+    from { background-position: -1000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+   @-webkit-keyframes city {
+    from { background-position: -1000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+   main {
+    width: 80%;
+    min-height: 800px;
+    display: block;
+    margin: auto;
+    background: rgba(255,255,255,0.6);
+    padding: 20px;
+   }
+  </style>
+</head>
+
+<body> 
+    <article>
+        
+        <div class="lines"></div>
+        <p>
+            <div id="page">
+                <div id="name">
+                    Vyatkina Valentina
+                </div>
+                &nbsp
+                <div id="about">
+                     Hi! I'm Vofia...
+                </div>
+                <div id="contacts">
+                    8 900 098 02 39 &nbsp &nbsp vyatkina.va@stidents.dvfu.ru
+                </div>
+                &nbsp
+                <div>
+                    <ul id="contact_box">
+                        <li><button class="contact_button"><a href="https://vk.com/vvvivalll"> <img src="static/images/vk.png" alt="VK"></a></button></li>
+                        <li><button class="contact_button"><a href="https://t.me/Viii_no"> <img src="static/images/tg.png" alt="Telegram"></a></button></li>
+                        <li><button class="contact_button"><a href="https://github.com/Vofia"> <img src="static/images/gt.png" alt="GitHub"></a></button></li>
+                    </ul>
+                </div>
+            </div>
+        </p>
+    </article>
+</body>
+</html>
